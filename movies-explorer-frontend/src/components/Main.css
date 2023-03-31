@@ -1,0 +1,8 @@
+.content {
+  position: relative;
+  max-width: 1280px;
+  margin: auto;
+  /* border: 1px solid red; */
+  background-color: #ffffff;
+  transition: all 1s ease;
+}

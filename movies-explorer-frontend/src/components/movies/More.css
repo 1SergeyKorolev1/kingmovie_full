@@ -1,0 +1,26 @@
+.more-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter";
+  font-size: 12px;
+  line-height: 100%;
+  width: 1140px;
+  max-width: 1140px;
+  height: 36px;
+  background-color: #f9f9f9;
+  margin: 50px auto 80px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.more-title:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 1168px) {
+  .more-title {
+    width: 90%;
+  }
+}

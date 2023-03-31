@@ -1,0 +1,65 @@
+.portfolio {
+  position: relative;
+  height: 408px;
+  overflow: hidden;
+}
+
+.portfolio__title {
+  margin: 42px 70px 50px 70px;
+  font-size: 18px;
+  line-height: 92%;
+  color: #a0a0a0;
+  transition: all 1s ease;
+}
+
+.portfolio-container {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolio-container__link {
+  margin: 0 70px 21px 70px;
+  padding-bottom: 19px;
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: 30px;
+  line-height: 138%;
+  border-bottom: 1px solid #e8e8e8;
+  color: #000;
+  transition: all 0.4s ease;
+}
+
+.portfolio-container__link::after {
+  content: url(../../images/text__strelka.svg);
+}
+
+.portfolio-container__link:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio__title {
+    margin: 42px 50px 50px;
+  }
+
+  .portfolio-container__link {
+    margin: 0 50px 21px;
+  }
+}
+
+@media screen and (max-width: 633px) {
+  .portfolio__title {
+    margin: 42px 14px 50px;
+  }
+
+  .portfolio-container__link {
+    margin: 0 14px 21px;
+    font-size: 18px;
+  }
+
+  .portfolio {
+    height: min-content;
+  }
+}

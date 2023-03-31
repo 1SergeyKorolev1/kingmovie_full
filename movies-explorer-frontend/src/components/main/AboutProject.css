@@ -1,0 +1,144 @@
+.project {
+  position: relative;
+  height: 608px;
+  overflow: hidden;
+}
+
+.project__title {
+  margin: 110px 70px 0 70px;
+  padding-bottom: 23px;
+  font-size: 22px;
+  line-height: 100%;
+  color: #000;
+  border-bottom: 1px solid #000;
+  transition: all 1s ease;
+}
+
+.project-table {
+  margin: 0 70px;
+  display: flex;
+  max-width: 1140px;
+  justify-content: space-between;
+  transition: all 1s ease;
+}
+
+.project-table__cell {
+  margin-top: 70px;
+  max-width: 490px;
+  transition: all 1s ease;
+}
+
+.project-table__heading {
+  margin: 0;
+  font-size: 20px;
+  line-height: 100%;
+  color: #000;
+}
+
+.project-table__text {
+  margin: 26px 0 0;
+  font-size: 14px;
+  line-height: 118%;
+  color: #000;
+  transition: all 1s ease;
+}
+
+.project-graph {
+  margin: 110px 70px 0;
+  display: flex;
+  max-width: 1140px;
+  transition: all 1s ease;
+}
+
+.project-graph__backend {
+  width: 20%;
+  text-align: center;
+}
+
+.project-graph__frontend {
+  width: 80%;
+  text-align: center;
+}
+
+.project-graph__progress-backend {
+  margin: 0 0 23px;
+  padding: 9px 0;
+  font-size: 14px;
+  line-height: 100%;
+  color: #000;
+  background-color: #2be080;
+  transition: all 1s ease;
+}
+
+.project-graph__progress-frontend {
+  margin: 0 0 23px;
+  padding: 9px 0;
+  font-size: 14px;
+  line-height: 100%;
+  color: #000;
+  background-color: #f2f2f2;
+  transition: all 1s ease;
+}
+
+.project-graph__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 100.34%;
+  color: #a0a0a0;
+  transition: all 1s ease;
+}
+
+@media screen and (max-width: 1088px) {
+  .project-table__cell {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project__title {
+    margin: 102px 50px 0;
+  }
+
+  .project-table {
+    margin: 0 50px;
+  }
+
+  .project-graph {
+    margin: 110px 50px 0;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .project__title {
+    margin: 70px 18px 0;
+  }
+
+  .project-table {
+    flex-direction: column;
+    margin: 0 18px;
+  }
+
+  .project-graph {
+    margin: 60px 18px 0;
+  }
+
+  .project-table__cell {
+    margin: 56px 0 0;
+  }
+
+  .project-table__text {
+    margin-top: 16px;
+  }
+
+  .project-graph__progress-backend {
+    font-size: 11px;
+  }
+
+  .project-graph__progress-frontend {
+    font-size: 11px;
+  }
+
+  .project-graph__text {
+    font-size: 11px;
+  }
+}

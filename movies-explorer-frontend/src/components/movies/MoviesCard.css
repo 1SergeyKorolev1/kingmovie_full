@@ -1,0 +1,144 @@
+.element {
+  min-width: 360px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+  transition: all 1s ease;
+}
+
+.element:nth-child(n + 7) {
+  display: none;
+}
+
+.element.visible {
+  display: flex;
+}
+
+.element__group {
+  display: flex;
+  justify-content: space-between;
+  margin: 18px 18px;
+}
+
+.element__title {
+  font-size: 15px;
+  line-height: 99%;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.element__time {
+  font-size: 13px;
+  line-height: 114%;
+  color: #a0a0a0;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.element__img {
+  height: 200px;
+  max-width: 360px;
+  min-height: 200px;
+  object-fit: contain;
+  background-color: #eeeeee;
+  width: 100%;
+  cursor: pointer;
+}
+
+.element__save {
+  width: 100px;
+  height: 29px;
+  margin: 18px auto;
+  border: none;
+  border-radius: 30px;
+  background-color: #f9f9f9;
+  font-size: 12px;
+  line-height: 76%;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.element__saved {
+  width: 100px;
+  height: 29px;
+  margin: 18px auto;
+  border: none;
+  border-radius: 30px;
+  background-color: #ee3465;
+  background-image: url(../../images/MovieCardSaved.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 12px;
+  line-height: 76%;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.element__delete {
+  width: 100px;
+  height: 29px;
+  margin: 18px auto;
+  border: none;
+  border-radius: 30px;
+  background-color: #f9f9f9;
+  background-image: url(../../images/MovieCardDelete.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 12px;
+  line-height: 76%;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.element__save:hover {
+  opacity: 0.6;
+}
+
+.element__delete:hover {
+  opacity: 0.6;
+}
+
+.element__saved:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 770px) {
+  .element {
+    min-width: 342px;
+  }
+
+  .element__img {
+    height: 190px;
+    min-height: 190px;
+  }
+}
+
+@media screen and (max-width: 743px) {
+  .element {
+    min-width: 300px;
+  }
+}
+
+@media screen and (max-width: 456px) {
+  .element__saved {
+    margin: 14px auto;
+  }
+
+  .element__save {
+    margin: 14px auto;
+  }
+
+  .element__delete {
+    margin: 14px auto;
+  }
+
+  .element__img {
+    height: 168px;
+    min-height: 168px;
+  }
+}

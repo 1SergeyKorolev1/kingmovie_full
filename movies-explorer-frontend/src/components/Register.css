@@ -1,0 +1,150 @@
+.login {
+  max-width: 1280px;
+  height: 100vh;
+  display: flex;
+  margin: auto;
+  background-color: #fff;
+}
+
+.login__wrapper {
+  width: 396px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  transition: all 1s ease;
+}
+
+.login__image {
+  margin-top: 70px;
+  width: 38px;
+  height: 38px;
+  transition: all 1s ease;
+}
+
+.login__image:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.login__welcome {
+  font-family: "Inter";
+  font-size: 24px;
+  line-height: 100%;
+  font-style: medium;
+  margin: 40px 0 40px;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login__label {
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 10px;
+  line-height: 100%;
+  color: #a0a0a0;
+  margin: 0 0 10px;
+}
+
+.login__input {
+  height: 46px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  padding-left: 15px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.login__button {
+  height: 45px;
+  border: none;
+  border-radius: 3px;
+  background-color: #ff6838;
+  font-family: "Inter";
+  font-size: 14px;
+  line-height: 100%;
+  font-style: medium;
+  margin: 82px 0 31px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.login__error {
+  margin: 0 0 10px;
+  font-family: "Inter-Regular";
+  line-height: 100%;
+  font-size: 10px;
+  color: #ee3465;
+}
+
+.login__button_invalid {
+  opacity: 0.2;
+}
+
+.login__button_valid {
+  opacity: 1;
+}
+
+.login__button_invalid:hover {
+  opacity: 0.2;
+  cursor: auto;
+}
+
+.login__button_valid:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.login__link-wrapper {
+  display: flex;
+  margin: 0 auto 70px;
+}
+
+.login__link-title {
+  margin: 0;
+  font-family: "Inter-Regular";
+  font-size: 14px;
+  line-height: 100%;
+  color: #a0a0a0;
+  transition: all 1s ease;
+}
+
+.login__link-register {
+  margin: 0 0 0 6px;
+  font-family: "Inter-Regular";
+  font-size: 14px;
+  line-height: 100%;
+  color: #ff6838;
+  text-decoration: none;
+  transition: all 1s ease;
+}
+
+.login__link-register:hover {
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 595px) {
+  .login__wrapper {
+    width: 260px;
+  }
+
+  .login__link-title {
+    font-size: 12px;
+  }
+
+  .login__link-register {
+    font-size: 12px;
+  }
+
+  .login__welcome {
+    text-align: center;
+  }
+
+  .login__image {
+    margin: 70px auto 0;
+  }
+}
