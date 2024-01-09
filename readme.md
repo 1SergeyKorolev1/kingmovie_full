@@ -2,7 +2,7 @@
 
 ---
 # Проект KingMovies бэкенд + фронт...
-[Ссылка на проект←](https://kingmovie.nomoredomains.club/) 
+[Ссылка на проект←](https://kingmovie.nomoredomains.club/) - в данный момент не работает(не оплачена ВМ)
 ---
 
 _Проект из учебного курса [Я.Практикум](https://practicum.yandex.ru/) веб-разработка._
